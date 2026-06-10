@@ -19,14 +19,14 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore EcommerceMVC/EcommerceMVC/EcommerceMVC.csproj
+      run: dotnet restore EcommerceMVC/EcommerceMVC.csproj
 
     - name: Publish application
-      run: dotnet publish EcommerceMVC/EcommerceMVC/EcommerceMVC.csproj -c Release -o ./publish
+      run: dotnet publish EcommerceMVC/EcommerceMVC.csproj -c Release -o ./publish
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
       with:
-        app-name: 'dalat-souvenir-shop' # Tên chính xác ứng dụng của bạn trong ảnh
+        app-name: 'dalat-souvenir-shop'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: ./publish
