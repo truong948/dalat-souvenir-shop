@@ -1,29 +1,26 @@
-﻿@model IEnumerable<EcommerceMVC.ViewModels.HangHoaVM>
+@model IEnumerable<EcommerceMVC.ViewModels.HangHoaVM>
 
-<h3> Có <b>@Model.Count()</b> sản phẩm.</h3>
+<div class="col-12">
+	<h3> Có <b>@Model.Count()</b> sản phẩm.</h3>
+</div>
 @foreach (var item in Model)
 {
 	<div class="col-md-6 col-lg-6 col-xl-4">
-		<div class="rounded position-relative fruite-item">
+		<div class="rounded position-relative fruite-item d-flex flex-column">
 			<div class="fruite-img">
 				<a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHh">
-					<img src="~/Hinh/HangHoa/@item.Hinh" class="img-fluid w-100 rounded-top" alt="@item.TenHH" >
+					<img src="~/Hinh/HangHoa/@item.Hinh" class="img-fluid w-100 rounded-top" alt="@item.TenHH" style="height: 250px; object-fit: cover;">
 				</a>
 			</div>
 			<div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@item.TenLoai</div>
-			<div class="p-4 border border-secondary border-top-0 rounded-bottom">
+			<div class="p-4 border border-secondary border-top-0 rounded-bottom d-flex flex-column flex-grow-1">
 				<a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHh"><h4>@item.TenHH</h4></a>
 				<p>@item.MoTaNgan</p>
-				<div class="d-flex justify-content-between flex-lg-wrap">
+				<div class="d-flex justify-content-between flex-lg-wrap mt-auto">
 					<p class="text-dark fs-5 fw-bold mb-0">$@item.DonGia</p>
 					<a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHh" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Đưa vào giỏ</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<style>
-		
-
-
-	</style>
 }

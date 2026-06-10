@@ -261,3 +261,10 @@ E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\Microsoft.Exten
 E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\obj\Debug\net8.0\EcommerceMVC.sourcelink.json
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\publish\web.config
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\publish\appsettings.Development.json
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\publish\appsettings.json
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\publish\EcommerceMVC.deps.json
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\publish\EcommerceMVC.runtimeconfig.json
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\publish\EcommerceMVC.staticwebassets.endpoints.json
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\publish\wwwroot\LayoutAdmin\package.json
