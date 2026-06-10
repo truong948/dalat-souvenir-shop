@@ -256,3 +256,8 @@ E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\obj\Debug\net8.0\rjsmrazor.dswa.
 E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\obj\Debug\net8.0\staticwebassets.build.json.cache
 E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\ASP.NET LÀM LẠI\EcommerceMVC\EcommerceMVC\obj\Debug\net8.0\EcommerceMVC.sourcelink.json

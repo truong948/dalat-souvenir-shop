@@ -1,0 +1,32 @@
+﻿name: Build and Deploy ASP.NET Core App to Azure
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore EcommerceMVC/EcommerceMVC/EcommerceMVC.csproj
+
+    - name: Publish application
+      run: dotnet publish EcommerceMVC/EcommerceMVC/EcommerceMVC.csproj -c Release -o ./publish
+
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: 'dalat-souvenir-shop' # Tên chính xác ứng dụng của bạn trong ảnh
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: ./publish
