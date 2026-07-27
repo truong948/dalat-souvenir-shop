@@ -1,21 +1,20 @@
-# Stage 1: Build project
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+WORKDIR /app
 
-# Copy csproj and restore dependencies
+# Copy csproj và restore
 COPY *.csproj ./
 RUN dotnet restore
 
-# Copy all files and build release
+# Copy toàn bộ code và publish
 COPY . ./
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish -c Release -o out
 
-# Stage 2: Runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+# Runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/publish .
+COPY --from=build /app/out .
 
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
 
-ENTRYPOINT ["dotnet", "YourProjectName.dll"]
+ENTRYPOINT ["dotnet", "EcommerceMVC.dll"]
